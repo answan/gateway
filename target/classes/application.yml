@@ -24,10 +24,10 @@ spring:
           uri: http://localhost:8085
           predicates:
             - Path=/storeManages/**
-        - id: promotion
+        - id: reward
           uri: http://localhost:8086
           predicates:
-            - Path=/promotions/**
+            - Path=/rewards/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -63,10 +63,10 @@ spring:
           uri: http://store:8080
           predicates:
             - Path=/storeManages/**
-        - id: promotion
-          uri: http://promotion:8080
+        - id: reward
+          uri: http://reward:8080
           predicates:
-            - Path=/promotions/**
+            - Path=/rewards/**
       globalcors:
         corsConfigurations:
           '[/**]':
